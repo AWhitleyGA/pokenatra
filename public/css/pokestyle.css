@@ -1,4 +1,4 @@
-/*
+
 
 Uncomment for sick pokestyle
 
@@ -7,14 +7,29 @@ Uncomment for sick pokestyle
   src: url(../fonts/PokemonSolid.ttf) format("truetype");
 }
 
-a, p, h2, h3 {
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a, p, h2, h3, button {
   color: rgb(215, 215, 0);
   text-shadow: rgb(35, 75, 180) 3px 3px 1px;
   -webkit-text-stroke: 2px rgb(55, 95, 200);
   text-decoration: none;
   border-radius: 100px;
+  margin: 10px;
 }
-
+a, button{
+    padding: 20px;
+}
+button {
+  background: none;
+  border: none;
+  letter-spacing: .25em;
+}
 
 body {
   background-image: url(../images/pokedex.png);
@@ -25,7 +40,7 @@ body {
   font-size: 200%;
 }
 
-a:hover {
+a:hover, button:hover {
   padding: 20px;
   animation: pulse 1s infinite;
 }
@@ -70,4 +85,4 @@ a:hover {
     text-shadow: 4px 4px 3px rgba(255, 0, 0, .3);
     background-color: rgba(0, 0, 0, .1);
   }
-}*/
+}

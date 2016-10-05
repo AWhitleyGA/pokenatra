@@ -1,21 +1,23 @@
 <a href="/pokemon/<%= @pokemon.id %>">Return to Pokemon Info</a>
 
-<h2>Edit Pokedex Info</h2>
+<div class="container">
+  <h2>Edit Pokedex Info</h2>
 
-<form action="/pokemon/<%= @pokemon.id %>" method="post">
-  <input type="hidden" name="_method" value="put">
+  <form action="/pokemon/<%= @pokemon.id %>" method="post">
+    <input type="hidden" name="_method" value="put">
 
-  <label>Pokemon Name</label>
-  <input type="text" name="name" value="<%= @pokemon.name %>">
+    <label>Pokemon Name</label>
+    <input type="text" name="name" value="<%= @pokemon.name %>">
 
-  <label>Pokemon Type</label>
-  <input type="text" name="poke_type" value="<%= @pokemon.poke_type %>">
+    <label>Pokemon Type</label>
+    <input type="text" name="poke_type" value="<%= @pokemon.poke_type %>">
 
-  <label>Combat Power</label>
-  <input type="number" name="cp" value="<%= @pokemon.cp %>">
+    <label>Combat Power</label>
+    <input type="number" name="cp" value="<%= @pokemon.cp %>">
 
-  <label>Image URL</label>
-  <input type="text" name="img_url" value="<%= @pokemon.img_url %>">
+    <label>Image URL</label>
+    <input type="text" name="img_url" value="<%= @pokemon.img_url %>">
 
-  <button type="submit">Save</button>
-</form>
+    <button type="submit">Save</button>
+  </form>
+<div>

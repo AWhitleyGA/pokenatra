@@ -1,9 +1,13 @@
-<h2>Pokemon</h2>
+<div class="container">
 
-<a href="/pokemon/new">Add Pokemon</a>
+  <h2>Pokemon</h2>
 
-<ul>
-  <% @pokemons.each do |pokemon| %>
-    <li><a href="pokemon/<%= pokemon.id %>"> <%= pokemon.name %> </a></li>
-  <% end %>
-<ul>
+  <h3><a href="/pokemon/new">Add Pokemon</a></h3>
+
+
+    <% @pokemons.each do |pokemon| %>
+      <a href="pokemon/<%= pokemon.id %>"> <%= pokemon.name %> </a>
+    <% end %>
+
+
+</div>

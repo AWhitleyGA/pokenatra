@@ -1,18 +1,20 @@
 <a href="/pokemon">Return to pokedex</a>
 
-<h2><%= @pokemon.name %></h2>
+<div class="container">
+  <h2><%= @pokemon.name %></h2>
 
-<img src="<%= @pokemon.img_url %>">
+  <img src="<%= @pokemon.img_url %>">
 
-<a href="/pokemon/<%= @pokemon.id %>/edit">Edit Pokedex Info</a>
+  <a href="/pokemon/<%= @pokemon.id %>/edit">Edit Pokedex Info</a>
 
-<form action="/pokemon/<%= @pokemon.id %>" method="post">
-  <input type="hidden" name="_method" value="delete">
-  <button type="submit">Remove from Pokedex</button>
-</form>
+  <form action="/pokemon/<%= @pokemon.id %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <button type="submit">Remove from Pokedex</button>
+  </form>
 
-<h3>Stats</h3>
-<ul>
-  <li>Pokemon Type : <%= @pokemon.poke_type %></li>
-  <li>Combat Power : <%= @pokemon.cp %></li>
-</ul>
+  <h3>Stats</h3>
+  <ul>
+    <li>Pokemon Type : <%= @pokemon.poke_type %></li>
+    <li>Combat Power : <%= @pokemon.cp %></li>
+  </ul>
+</div>
