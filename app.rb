@@ -43,5 +43,11 @@ put '/pokemon/:id' do
     poke_type: params[:poke_type],
     img_url: params[:img_url]
   )
+  redirect "/pokemon/#{@pokemon.id}"
+end
+
+delete '/pokemon/:id' do
+  @pokemon = Pokemon.find(params[:id])
+  @pokemon.destroy
   redirect "/pokemon"
 end

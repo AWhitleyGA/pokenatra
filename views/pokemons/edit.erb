@@ -1,4 +1,4 @@
-<a href="/pokemon">Return to pokedex</a>
+<a href="/pokemon/<%= @pokemon.id %>">Return to Pokemon Info</a>
 
 <h2>Edit Pokedex Info</h2>
 
@@ -17,5 +17,5 @@
   <label>Image URL</label>
   <input type="text" name="img_url" value="<%= @pokemon.img_url %>">
 
-  <button type="submit">Add</button>
+  <button type="submit">Save</button>
 </form>
