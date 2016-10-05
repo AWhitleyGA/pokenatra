@@ -1,5 +1,7 @@
 <h2>Pokemon</h2>
 
+<a href="/pokemon/new">Add Pokemon</a>
+
 <ul>
   <% @pokemons.each do |pokemon| %>
     <li><a href="pokemon/<%= pokemon.id %>"> <%= pokemon.name %> </a></li>
