@@ -1,0 +1,19 @@
+<a href="/teams/<% @team.name %>">Return to Team</a>
+
+<div class="container">
+  <h2><%= @trainer.name %></h2>
+
+  <img src="<%= @trainer.img_url %>">
+
+  <a href="/trainers/<%= @trainer.id %>/edit">Edit Trainer Info</a>
+
+  <form action="/trainers/<%= @trainer.id %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <button type="submit">Remove from Team</button>
+  </form>
+
+  <h3>Pokemon</h3>
+  <% @pokemons.each do |pokemon| %>
+    <a href="/pokemon/<%= pokemon.id %>"><%= pokemon.name %></a>
+  <% end %>
+</div>

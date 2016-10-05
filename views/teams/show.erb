@@ -1,0 +1,17 @@
+<a href="/teams">Return to All Teams</a>
+
+<div class="container">
+
+  <h1>Team <%= @team.name %></h1>
+
+  <img src="<%= @team.img_url %>">
+
+  <h3><a href="/trainers/new">Add Trainer</a></h3>
+
+
+    <% @trainers.each do |trainer| %>
+      <a href="/<%= @team.name %>/trainers/<%= trainer.id %>"> <%= trainer.name %> </a>
+    <% end %>
+
+
+</div>
