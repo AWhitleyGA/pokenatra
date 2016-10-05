@@ -14,13 +14,16 @@ Uncomment for sick pokestyle
   align-items: center;
 }
 
-a, p, h2, h3, button {
+a, p, h1, h2, h3, button {
   color: rgb(215, 215, 0);
   text-shadow: rgb(35, 75, 180) 3px 3px 1px;
   -webkit-text-stroke: 2px rgb(55, 95, 200);
   text-decoration: none;
   border-radius: 100px;
   margin: 10px;
+}
+h1 {
+  font-size: 3.0em;
 }
 a, button{
     padding: 20px;
@@ -29,6 +32,13 @@ button {
   background: none;
   border: none;
   letter-spacing: .25em;
+}
+input {
+  display: block;
+  background: rgba(255, 255, 255, 0.6);
+  border: none;
+  outline: none;
+  text-align: center;
 }
 
 body {
@@ -46,7 +56,7 @@ a:hover, button:hover {
   padding: 20px;
   animation: pulse 1s infinite;
 }
-.containareon, h1 {
+.containareon {
   box-sizing: border-box;
   padding: 10px;
   width: 50%;
